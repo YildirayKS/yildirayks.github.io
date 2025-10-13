@@ -13,7 +13,8 @@
 
 html {
     font-size: 62.5%;
-    scroll-behavior: smooth; /* ✅ YUMUŞAK KAYDIRMA */
+    scroll-behavior: smooth;
+    /* ✅ YUMUŞAK KAYDIRMA */
 }
 
 body {
@@ -187,7 +188,7 @@ span {
     border: 2px solid #b74b4b;
     transition: 0.3s ease;
     cursor: pointer;
-    
+
     text-shadow: 0 0 25px #b74b4b;
 }
 
@@ -297,23 +298,39 @@ section h2 {
     overflow: hidden;
     box-shadow: 0 0 20px #b74b4b;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card img {
-    width: 100%;
-    height: 20rem;
-    object-fit: cover;
-}
-
-.project-card p {
-    padding: 1.5rem;
-    font-size: 1.5rem;
-    color: white;
+    padding: 2rem;
+    cursor: pointer;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 30px #b74b4b;
+}
+
+/* Ana sayfa kart başlığı */
+.project-card .project-title {
+    font-size: 2.4rem;
+    color: #b74b4b;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* Açıklama */
+.project-card .project-desc {
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+/* Kullanılan teknolojiler */
+.project-card .project-tech {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.project-card .project-tech span {
+    color: #b74b4b;
+    font-weight: 600;
 }
 
 /* ----- PROJECT MODAL ----- */
@@ -326,7 +343,7 @@ section h2 {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.95);
+    background-color: rgba(0, 0, 0, 0.95);
 }
 
 .project-modal .modal-content {
@@ -343,12 +360,11 @@ section h2 {
 
 .project-modal img.modal-img {
     width: 100%;
-    max-height: 50rem; /* 30rem yerine daha büyük modal gösterimi */
-    object-fit: contain; /* tüm resmi bozmadan gösterir */
+    max-height: 50rem;
+    object-fit: contain;
     margin: 1.5rem 0;
     border-radius: 1rem;
 }
-
 
 .project-modal h3.modal-title {
     font-size: 3rem;
@@ -378,8 +394,8 @@ section h2 {
 }
 
 .modal-tech-label {
-    color: #b74b4b; /* sayfadaki kırmızı renk */
-    font-weight: 600; /* isteğe bağlı vurgulu yapmak için */
+    color: #b74b4b;
+    font-weight: 600;
 }
 
 /* ----- CONTACT ----- */

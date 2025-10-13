@@ -170,37 +170,39 @@
         <h2>Projects</h2>
         <div class="projects-container">
             <!-- Project Card -->
-            <div class="project-card" data-title="Word Slide" data-img="assets/project_images/wordslide.jpg"
-                data-tech="Unity, C#" data-desc=" I worked on a project aimed at designing an offline, single-player word learning game to
-                            help users improve their English–Turkish vocabulary in an engaging and efficient way.
-                            Within this scope, the goal was to present words on the screen for 60 seconds and have the
-                            player guess their meanings. If the meaning was known, the card would be swiped to the
-                            right; if unknown or incorrect, to the left. At the end of the round, the system displayed the
-                            number of correct and incorrect answers to track performance">
-                <img src="assets/project_images/wordslide.jpg" alt="Word Slide">
-                <p>Proje 1 açıklaması: Bu proje ile X teknolojisini kullanarak Y çözümü geliştirdim.</p>
+            <div class="project-card" data-title="Word Slide"
+                data-img="assets/project_images/word_slide_background-removebg-preview.png" data-tech="Unity, C#"
+                data-desc="I worked on a project aimed at designing an offline, single-player word learning game to
+            help users improve their English–Turkish vocabulary in an engaging and efficient way. Within this scope, the goal was to present words on the screen for 60 seconds and have the player guess their meanings. If the meaning was known, the card would be swiped to the right; if unknown or incorrect, to the left. At the end of the round, the system displayed the number of correct and incorrect answers to track performance.">
+                <h3 class="project-title">Word Slide</h3>
+                <p class="project-desc">Bu proje ile Unity ve C# kullanarak kelime öğrenme oyunları geliştirdim.</p>
+                <p class="project-tech"><span>Technologies:</span> Unity, C#</p>
             </div>
 
             <div class="project-card" data-title="Project 2" data-img="assets/ibu_logo.png" data-tech="React, Node.js"
                 data-desc="Bu projede Z teknolojisi ile kullanıcı deneyimini iyileştirdim. Detaylı açıklamalar burada.">
-                <img src="assets/ibu_logo.png" alt="Project 2">
-                <p>Proje 2 açıklaması: Bu projede Z teknolojisi ile kullanıcı deneyimini iyileştirdim.</p>
+                <h3 class="project-title">Project 2</h3>
+                <p class="project-desc">Bu projede kullanıcı deneyimini geliştirmek için React ve Node.js kullandım.</p>
+                <p class="project-tech"><span>Technologies:</span> React, Node.js</p>
             </div>
 
             <div class="project-card" data-title="Project 3" data-img="assets/ibu_logo.png" data-tech="Python, Flask"
                 data-desc="Bu proje, yazılım optimizasyonu ve verimlilik artırımı üzerine odaklandı.">
-                <img src="assets/ibu_logo.png" alt="Project 3">
-                <p>Proje 3 açıklaması: Bu proje, yazılım optimizasyonu ve verimlilik artırımı üzerine odaklandı.</p>
+                <h3 class="project-title">Project 3</h3>
+                <p class="project-desc">Python ve Flask ile yazılım optimizasyonu sağladım.</p>
+                <p class="project-tech"><span>Technologies:</span> Python, Flask</p>
             </div>
 
             <div class="project-card" data-title="Project 4" data-img="assets/ibu_logo.png"
                 data-tech="Java, Spring Boot"
                 data-desc="Bu projede ekip çalışması ve problem çözme yeteneklerini geliştirdim.">
-                <img src="assets/ibu_logo.png" alt="Project 4">
-                <p>Proje 4 açıklaması: Bu projede ekip çalışması ve problem çözme yeteneklerini geliştirdim.</p>
+                <h3 class="project-title">Project 4</h3>
+                <p class="project-desc">Java ve Spring Boot kullanarak ekip projeleri geliştirdim.</p>
+                <p class="project-tech"><span>Technologies:</span> Java, Spring Boot</p>
             </div>
         </div>
     </section>
+
 
     <!-- PROJECT MODAL -->
     <div class="project-modal">
@@ -245,17 +247,10 @@
         </div>
     </section>
 
-
-
-    <!-- ✅ ESKİ SÜRÜMÜ SİL! -->
-    <!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
-
-    <!-- ✅ YENİ SDK -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <script>
         (function () {
-            // ✅ BURAYA KENDİ PUBLIC KEY'İNİ YAZ!
             emailjs.init({
                 publicKey: 'nVz2SoV6hqjMnhOmk',
             });
@@ -265,13 +260,11 @@
         const sections = document.querySelectorAll('section');
         const logo = document.querySelector('.logo');
 
-        // Logo'ya tıklanınca Home'u aktif yap
         logo.addEventListener('click', function () {
             navLinks.forEach(nav => nav.classList.remove('active'));
             navLinks[0].classList.add('active');
         });
 
-        // Menü linklerine tıklayınca active class güncelle
         navLinks.forEach(link => {
             link.addEventListener('click', function () {
                 navLinks.forEach(nav => nav.classList.remove('active'));
@@ -279,7 +272,6 @@
             });
         });
 
-        // Scroll Spy – sayfa kaydırıldıkça aktif link değişsin
         window.addEventListener('scroll', () => {
             let current = '';
             sections.forEach(section => {
@@ -298,7 +290,6 @@
             });
         });
 
-        // ===== CONTACT FORM MAIL GÖNDER =====
         const contactForm = document.querySelector('.contact-form form');
         if (contactForm) {
             contactForm.addEventListener('submit', function (e) {
@@ -311,7 +302,6 @@
                     message: contactForm.message.value
                 };
 
-                // ✅ BURAYA KENDİ SERVICE ID ve TEMPLATE ID'NI YAZ!
                 emailjs.send("service_sotjm55", "template_q2hjbtc", formData)
                     .then(function (response) {
                         alert('Message sent successfully!');
@@ -323,7 +313,6 @@
             });
         }
 
-        // Projects modal functionality
         const projectCards = document.querySelectorAll('.project-card');
         const projectModal = document.querySelector('.project-modal');
         const modalTitle = document.querySelector('.modal-title');
@@ -337,9 +326,6 @@
                 modalTitle.textContent = card.dataset.title;
                 modalImg.src = card.dataset.img;
 
-                // span ekleyerek CSS sınıfı veriyoruz
-                modalTech.innerHTML = `<span class="modal-tech-label">Technologies:</span> ${card.dataset.tech}`;
-
                 modalDesc.textContent = card.dataset.desc;
                 projectModal.style.display = "block";
 
@@ -348,26 +334,19 @@
             });
         });
 
-
         closeBtn.addEventListener('click', () => {
             projectModal.style.display = "none";
-
-            // 🔓 Modal kapandığında body scroll'u aç
             document.body.style.overflow = 'auto';
-            document.body.style.overflowX = 'hidden'; // yatay scroll kapalı kalır
+            document.body.style.overflowX = 'hidden';
         });
 
         window.addEventListener('click', (e) => {
             if (e.target === projectModal) {
                 projectModal.style.display = "none";
-
-                // 🔓 Modal kapandığında body scroll'u aç
                 document.body.style.overflow = 'auto';
-                document.body.style.overflowX = 'hidden'; // yatay scroll kapalı kalır
+                document.body.style.overflowX = 'hidden';
             }
         });
-
-
     </script>
 
 </body>
