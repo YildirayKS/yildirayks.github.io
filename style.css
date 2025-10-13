@@ -293,6 +293,9 @@ section h2 {
 }
 
 .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* içerik yukarıdan başlar */
     background-color: #1a1a1a;
     border-radius: 1rem;
     overflow: hidden;
@@ -300,6 +303,7 @@ section h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 2rem;
     cursor: pointer;
+    height: auto; /* Sabit yükseklik kaldırıldı */
 }
 
 .project-card:hover {
@@ -313,6 +317,7 @@ section h2 {
     color: #b74b4b;
     margin-bottom: 1rem;
     font-weight: 700;
+    text-align: center;
 }
 
 /* Açıklama */
@@ -326,6 +331,7 @@ section h2 {
 .project-card .project-tech {
     font-size: 1.5rem;
     color: white;
+    margin-top: auto; /* Açıklamadan bağımsız alt kısımda kalır */
 }
 
 .project-card .project-tech span {
@@ -353,7 +359,7 @@ section h2 {
     border-radius: 1rem;
     width: 80%;
     max-width: 70rem;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 0 30px #b74b4b;
     position: relative;
 }
@@ -370,6 +376,7 @@ section h2 {
     font-size: 3rem;
     color: #b74b4b;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .project-modal p {
