@@ -750,3 +750,18 @@ section h2 {
     font-size: 1.4rem;
     color: white;
 }
+
+/* ----- FOOTER ----- */
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 2px solid #b74b4b;
+    font-size: 1.6rem;
+    color: #b74b4b;
+    margin-top: 4rem;
+}
+
+footer p {
+    margin: 0;
+}
