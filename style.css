@@ -343,11 +343,12 @@ section h2 {
 
 .project-modal img.modal-img {
     width: 100%;
-    max-height: 30rem;
-    object-fit: cover;
+    max-height: 50rem; /* 30rem yerine daha büyük modal gösterimi */
+    object-fit: contain; /* tüm resmi bozmadan gösterir */
     margin: 1.5rem 0;
     border-radius: 1rem;
 }
+
 
 .project-modal h3.modal-title {
     font-size: 3rem;
@@ -374,6 +375,11 @@ section h2 {
 .project-modal .close-btn:hover {
     color: white;
     transform: scale(1.2);
+}
+
+.modal-tech-label {
+    color: #b74b4b; /* sayfadaki kırmızı renk */
+    font-weight: 600; /* isteğe bağlı vurgulu yapmak için */
 }
 
 /* ----- CONTACT ----- */

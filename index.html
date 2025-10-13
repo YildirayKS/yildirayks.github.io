@@ -171,8 +171,7 @@
         <div class="projects-container">
             <!-- Project Card -->
             <div class="project-card" data-title="Word Slide" data-img="assets/project_images/wordslide.jpg"
-                data-tech="Unity, C#" 
-                data-desc=" I worked on a project aimed at designing an offline, single-player word learning game to
+                data-tech="Unity, C#" data-desc=" I worked on a project aimed at designing an offline, single-player word learning game to
                             help users improve their English–Turkish vocabulary in an engaging and efficient way.
                             Within this scope, the goal was to present words on the screen for 60 seconds and have the
                             player guess their meanings. If the meaning was known, the card would be swiped to the
@@ -337,21 +336,37 @@
             card.addEventListener('click', () => {
                 modalTitle.textContent = card.dataset.title;
                 modalImg.src = card.dataset.img;
-                modalTech.textContent = "Technologies: " + card.dataset.tech;
+
+                // span ekleyerek CSS sınıfı veriyoruz
+                modalTech.innerHTML = `<span class="modal-tech-label">Technologies:</span> ${card.dataset.tech}`;
+
                 modalDesc.textContent = card.dataset.desc;
                 projectModal.style.display = "block";
+
+                document.body.style.overflow = 'hidden';
+                document.body.style.overflowX = 'hidden';
             });
         });
 
+
         closeBtn.addEventListener('click', () => {
             projectModal.style.display = "none";
+
+            // 🔓 Modal kapandığında body scroll'u aç
+            document.body.style.overflow = 'auto';
+            document.body.style.overflowX = 'hidden'; // yatay scroll kapalı kalır
         });
 
         window.addEventListener('click', (e) => {
             if (e.target === projectModal) {
                 projectModal.style.display = "none";
+
+                // 🔓 Modal kapandığında body scroll'u aç
+                document.body.style.overflow = 'auto';
+                document.body.style.overflowX = 'hidden'; // yatay scroll kapalı kalır
             }
         });
+
 
     </script>
 
