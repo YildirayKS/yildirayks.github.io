@@ -118,6 +118,12 @@ section {
 }
 
 /* ----- HOME CONTENT ----- */
+
+.home-content .btn-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
 .home .home-content h1 {
     font-size: 6rem;
     font-weight: 700;
