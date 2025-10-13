@@ -428,3 +428,154 @@ section h2 {
         width: 100%;
     }
 }
+
+/* ----- EDUCATION ----- */
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.education-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px #b74b4b;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px #b74b4b;
+}
+
+/* Logo alanı (isteğe bağlı resim) */
+.edu-logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 15%;
+    border: 2px solid #b74b4b;
+}
+
+/* Logo koymazsan bile boşluk korunur */
+.edu-logo {
+    min-width: 80px;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edu-content h3 {
+    font-size: 2.4rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.edu-year {
+    font-size: 1.6rem;
+    color: #b74b4b;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.edu-content p {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .education-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .edu-logo {
+        margin-bottom: 1rem;
+    }
+}
+
+/* ----- EXPERIENCE ----- */
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.experience-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px #b74b4b;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px #b74b4b;
+}
+
+/* Logo alanı (isteğe bağlı resim) */
+.exp-logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 15%;
+    border: 2px solid #b74b4b;
+}
+
+/* Logo koymasan bile boşluk korunur */
+.exp-logo {
+    min-width: 80px;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exp-content h3 {
+    font-size: 2.4rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.exp-company {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 600;
+    display: block;
+}
+
+.exp-year {
+    font-size: 1.6rem;
+    color: #b74b4b;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.exp-content p {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .experience-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .exp-logo {
+        margin-bottom: 1rem;
+    }
+}
