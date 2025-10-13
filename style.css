@@ -104,8 +104,8 @@ nav a.active {
 
 /* ----- SECTIONS ----- */
 section {
-    min-height: 100vh;
-    padding: 10rem 9% 5rem;
+    min-height: auto;
+    padding: 7rem 9% 3rem;
 }
 
 /* ----- HOME ----- */
