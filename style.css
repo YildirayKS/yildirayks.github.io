@@ -295,7 +295,8 @@ section h2 {
 .project-card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* içerik yukarıdan başlar */
+    justify-content: flex-start;
+    /* içerik yukarıdan başlar */
     background-color: #1a1a1a;
     border-radius: 1rem;
     overflow: hidden;
@@ -303,7 +304,8 @@ section h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 2rem;
     cursor: pointer;
-    height: auto; /* Sabit yükseklik kaldırıldı */
+    height: auto;
+    /* Sabit yükseklik kaldırıldı */
 }
 
 .project-card:hover {
@@ -331,7 +333,8 @@ section h2 {
 .project-card .project-tech {
     font-size: 1.5rem;
     color: white;
-    margin-top: auto; /* Açıklamadan bağımsız alt kısımda kalır */
+    margin-top: auto;
+    /* Açıklamadan bağımsız alt kısımda kalır */
 }
 
 .project-card .project-tech span {
@@ -522,28 +525,34 @@ section h2 {
 .education-container {
     display: flex;
     flex-direction: column;
-    gap: 2rem; /* önce 3rem, daha kompakt */
+    gap: 2rem;
+    /* önce 3rem, daha kompakt */
 }
 
 .education-card {
     display: flex;
     align-items: center;
-    gap: 1.5rem; /* içerik arası mesafe azaltıldı */
+    gap: 1.5rem;
+    /* içerik arası mesafe azaltıldı */
     background-color: #1a1a1a;
-    padding: 1.5rem; /* önce 2rem */
+    padding: 1.5rem;
+    /* önce 2rem */
     border-radius: 1rem;
-    box-shadow: 0 0 18px #b74b4b; /* hafif azaltıldı */
+    box-shadow: 0 0 18px #b74b4b;
+    /* hafif azaltıldı */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .education-card:hover {
-    transform: translateY(-5px); /* önce -8px */
+    transform: translateY(-5px);
+    /* önce -8px */
     box-shadow: 0 0 25px #b74b4b;
 }
 
 /* Logo alanı */
 .edu-logo img {
-    width: 60px;   /* önce 80px */
+    width: 60px;
+    /* önce 80px */
     height: 60px;
     object-fit: cover;
     border-radius: 15%;
@@ -560,13 +569,15 @@ section h2 {
 }
 
 .edu-content h3 {
-    font-size: 2rem; /* önce 2.4rem */
+    font-size: 2rem;
+    /* önce 2.4rem */
     color: white;
     margin-bottom: 0.4rem;
 }
 
 .edu-year {
-    font-size: 1.4rem; /* önce 1.6rem */
+    font-size: 1.4rem;
+    /* önce 1.6rem */
     color: #b74b4b;
     font-weight: 600;
     display: block;
@@ -574,7 +585,8 @@ section h2 {
 }
 
 .edu-content p {
-    font-size: 1.3rem; /* önce 1.5rem */
+    font-size: 1.3rem;
+    /* önce 1.5rem */
     color: #ccc;
     line-height: 1.4;
 }
@@ -595,28 +607,34 @@ section h2 {
 .experience-container {
     display: flex;
     flex-direction: column;
-    gap: 2rem; /* önce 3rem */
+    gap: 2rem;
+    /* önce 3rem */
 }
 
 .experience-card {
     display: flex;
     align-items: center;
-    gap: 1.5rem; /* içerik arası mesafe azaltıldı */
+    gap: 1.5rem;
+    /* içerik arası mesafe azaltıldı */
     background-color: #1a1a1a;
-    padding: 1.5rem; /* önce 2rem */
+    padding: 1.5rem;
+    /* önce 2rem */
     border-radius: 1rem;
-    box-shadow: 0 0 18px #b74b4b; /* hafif azaltıldı */
+    box-shadow: 0 0 18px #b74b4b;
+    /* hafif azaltıldı */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .experience-card:hover {
-    transform: translateY(-5px); /* önce -8px */
+    transform: translateY(-5px);
+    /* önce -8px */
     box-shadow: 0 0 25px #b74b4b;
 }
 
 /* Logo alanı */
 .exp-logo img {
-    width: 60px;  /* önce 80px */
+    width: 60px;
+    /* önce 80px */
     height: 60px;
     object-fit: cover;
     border-radius: 15%;
@@ -633,20 +651,23 @@ section h2 {
 }
 
 .exp-content h3 {
-    font-size: 2rem; /* önce 2.4rem */
+    font-size: 2rem;
+    /* önce 2.4rem */
     color: white;
     margin-bottom: 0.4rem;
 }
 
 .exp-company {
-    font-size: 1.6rem; /* önce 1.8rem */
+    font-size: 1.6rem;
+    /* önce 1.8rem */
     color: white;
     font-weight: 600;
     display: block;
 }
 
 .exp-year {
-    font-size: 1.4rem; /* önce 1.6rem */
+    font-size: 1.4rem;
+    /* önce 1.6rem */
     color: #b74b4b;
     font-weight: 600;
     display: block;
@@ -654,7 +675,8 @@ section h2 {
 }
 
 .exp-content p {
-    font-size: 1.3rem; /* önce 1.5rem */
+    font-size: 1.3rem;
+    /* önce 1.5rem */
     color: #ccc;
     line-height: 1.4;
 }
@@ -669,4 +691,56 @@ section h2 {
     .exp-logo {
         margin-bottom: 0.8rem;
     }
+}
+
+/* ----- SKILLS ----- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2.5rem;
+}
+
+.skill-card {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px #b74b4b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px #b74b4b;
+}
+
+.skill-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #b74b4b;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 1.5rem;
+    background-color: #333;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.skill-fill {
+    height: 100%;
+    background-color: #b74b4b;
+    width: 0;
+    border-radius: 1rem;
+    transition: width 1.5s ease;
+}
+
+.skill-percent {
+    font-size: 1.4rem;
+    color: white;
 }
