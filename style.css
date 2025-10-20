@@ -23,6 +23,12 @@ body {
     overflow-x: hidden;
     background-color: black;
     color: white;
+
+    /* SAYFADAKİ HER ŞEYİN SEÇİLMEYİ ENGELLE */
+    user-select: none;          /* Standart */
+    -webkit-user-select: none;  /* Chrome, Safari */
+    -moz-user-select: none;     /* Firefox */
+    -ms-user-select: none;      /* IE/Edge */
 }
 
 /* ----- HEADER ----- */
@@ -451,6 +457,10 @@ section h2 {
 .info-card p {
     font-size: 1.5rem;
     color: white;
+}
+
+#email_text{
+        user-select: text; /* Mail seçilebilir hale getirildi*/
 }
 
 .info-card:hover {
