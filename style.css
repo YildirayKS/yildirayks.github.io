@@ -25,10 +25,14 @@ body {
     color: white;
 
     /* SAYFADAKİ HER ŞEYİN SEÇİLMEYİ ENGELLE */
-    user-select: none;          /* Standart */
-    -webkit-user-select: none;  /* Chrome, Safari */
-    -moz-user-select: none;     /* Firefox */
-    -ms-user-select: none;      /* IE/Edge */
+    user-select: none;
+    /* Standart */
+    -webkit-user-select: none;
+    /* Chrome, Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE/Edge */
 }
 
 /* ----- HEADER ----- */
@@ -111,7 +115,7 @@ nav a.active {
 /* ----- SECTIONS ----- */
 section {
     min-height: auto;
-    padding: 7rem 9% 3rem;
+    padding: 7.3rem 9% 3rem;
 }
 
 /* ----- HOME ----- */
@@ -156,7 +160,6 @@ span {
     width: 32vw;
     border-radius: 5%;
     box-shadow: 0 0 25px solid #b74b4b;
-    cursor: pointer;
     transition: 0.2s linear;
 }
 
@@ -420,6 +423,11 @@ section h2 {
     font-weight: 600;
 }
 
+.modal-tech-list {
+    color: white;
+    font-weight: normal;
+}
+
 /* ----- CONTACT ----- */
 .contact-container {
     display: flex;
@@ -460,8 +468,9 @@ section h2 {
     color: white;
 }
 
-#email_text{
-        user-select: text; /* Mail seçilebilir hale getirildi*/
+#email_text {
+    user-select: text;
+    /* Mail seçilebilir hale getirildi*/
 }
 
 .info-card:hover {
