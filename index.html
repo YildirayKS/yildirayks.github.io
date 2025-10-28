@@ -434,14 +434,27 @@
 
                 emailjs.send("service_sotjm55", "template_q2hjbtc", formData)
                     .then(function () {
-                        alert('Message sent successfully!');
+                        showCustomAlert('Message sent successfully!', 'success');
                         contactForm.reset();
                     })
                     .catch(function (error) {
-                        alert('Oops! Something went wrong. Please try again.');
+                        showCustomAlert('Oops! Something went wrong. Please try again.', 'error');
                         console.error('EmailJS error:', error);
                     });
             });
+        }
+
+        function showCustomAlert(message, type) {
+            const alertBox = document.createElement('div');
+            alertBox.classList.add('custom-alert', type);
+            alertBox.innerHTML = `<p>${message}</p>`;
+            document.body.appendChild(alertBox);
+
+            // 3 saniye sonra otomatik kaybolsun
+            setTimeout(() => {
+                alertBox.classList.add('hide');
+                setTimeout(() => alertBox.remove(), 300);
+            }, 3000);
         }
 
         // ----- PROJECT MODAL -----
