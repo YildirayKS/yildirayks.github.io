@@ -262,7 +262,7 @@
             </div>
 
             <div class="project-card" data-title="Graduation Project"
-                data-img='["assets/project_images/graduation_project/graduation_project_1.jpg", "assets/project_images/graduation_project/graduation_project_2.jpg"]'
+                data-img='["assets/project_images/graduation_project/graduation_project_1.jpg"]'
                 data-desc="I developed a mobile application that provides first aid recommendations to soldiers injured in combat, functioning offline and directly on the device without an internet connection. With this application, when soldiers upload a photo of the injured area, the AI model I trained identifies the type of wound and provides appropriate first aid suggestions based on the available medical supplies. Through this project, I aimed to help reduce, at least partially, the number of soldier casualties.">
                 <h3 class="project-title">Graduation Project</h3>
                 <p class="project-desc">A mobile app that provides offline first aid guidance for soldiers by analyzing
@@ -441,7 +441,6 @@
             alertBox.innerHTML = `<p>${message}</p>`;
             document.body.appendChild(alertBox);
 
-            // 3 saniye sonra otomatik kaybolsun
             setTimeout(() => {
                 alertBox.classList.add('hide');
                 setTimeout(() => alertBox.remove(), 300);
@@ -475,7 +474,6 @@
                 modalDesc.textContent = desc;
                 modalTech.textContent = tech;
 
-                // Modal içindeki resimleri temizle ve ekle
                 modalImages.innerHTML = '';
                 images.forEach(src => {
                     const img = document.createElement('img');
