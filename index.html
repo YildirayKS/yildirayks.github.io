@@ -245,7 +245,6 @@
             </div>
 
             <div class="project-card" data-title="Driver Monitoring System"
-                data-img='["assets/project_images/driver_monitoring_system/driver_monitoring_system_1.jpg","assets/project_images/driver_monitoring_system/driver_monitoring_system_2.jpg", "assets/project_images/driver_monitoring_system/driver_monitoring_system_3.jpg"]'
                 data-desc="In the transportation sector, drivers continuing to drive using tachograph devices belonging to others after their own device’s duration had expired caused both legal violations and an increased risk of fatigue-related accidents. To address this issue, I worked on an integrated system that performs face recognition-based tachograph verification and real-time sleep–wakefulness monitoring. When a driver scanned their tachograph device into the system, I planned for the in-vehicle camera to analyze the driver’s face and check whether it matched the device’s actual owner. After verification, the system was intended to monitor the driver’s alertness in real time during driving using AI-supported image processing techniques, and issue an audible warning if drowsiness or inattention was detected. With this project, I aimed both to prevent tachograph misuse and to enhance driver safety.">
                 <h3 class="project-title">Driver Monitoring System</h3>
                 <p class="project-desc">Developed an integrated system using face recognition and AI to verify
@@ -311,7 +310,6 @@
                 <form action="#" method="post">
                     <input type="text" name="from_name" placeholder="Your Name" required>
                     <input type="email" name="from_email" placeholder="Your Email" required>
-                    <input type="title" name="title" placeholder="Title" required>
                     <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
@@ -371,7 +369,6 @@
                 const formData = {
                     from_name: contactForm.from_name.value,
                     from_email: contactForm.from_email.value,
-                    title: contactForm.title.value,
                     message: contactForm.message.value
                 };
 
