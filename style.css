@@ -731,14 +731,13 @@ footer p {
 /* MOBILE - REPLACEMENT */
 @media (max-width: 1000px) {
 
-    /* hamburger butonu */
     .menu-btn {
         display: block;
-        font-size: 28px;
+        font-size: 40px;
         cursor: pointer;
+        padding: 10px;
     }
 
-    /* nav kutusu */
     nav {
         position: absolute;
         top: 65px;
