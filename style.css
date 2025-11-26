@@ -727,3 +727,59 @@ footer p {
     opacity: 0;
     transform: translateY(-20px);
 }
+
+/* MOBILE - REPLACEMENT */
+@media (max-width: 1000px) {
+
+    /* hamburger butonu */
+    .menu-btn {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    /* nav kutusu */
+    nav {
+        position: absolute;
+        top: 65px;
+        right: 0;
+        background: #111;
+        width: 200px;             
+        display: none;
+        flex-direction: column;
+        gap: 6px;                 
+        padding: 0.8rem 1rem;     
+        border-radius: 0 0 0 8px;
+        box-sizing: border-box;
+        z-index: 150;
+    }
+
+    nav a {
+        display: block;
+        margin: 0;                
+        padding: 0.5rem 0.4rem;   
+        font-size: 1.9rem;       
+        line-height: 2;           
+        color: white;
+        border-bottom: none;      
+    }
+
+    nav a:hover,
+    nav a.active {
+        color: #b74b4b;
+        background: rgba(183,75,75,0.03); 
+        border-radius: 6px;
+        padding-left: 0.6rem;     
+    }
+
+    nav.active {
+        display: block;
+        border: 2px solid #b74b4b;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    body.nav-open { overflow: hidden; }
+}
