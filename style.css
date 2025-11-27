@@ -264,15 +264,12 @@ section {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-        /* margin sorunu çözümü */
         margin: 2rem auto;
         padding: 0 2rem;
-        gap: 3rem;
+        gap: 2rem;
         width: 100%;
     }
 
-    /* İçeriği sınırlıyoruz */
     .home-content {
         width: 100%;
         max-width: 500px;
@@ -280,9 +277,10 @@ section {
     }
 
     .home-img img {
-        width: 70vw;
-        max-width: 350px;
-        margin-top: 2rem;
+        width: 80%;            /* ekranın %80'i */
+        max-width: 350px;      /* maksimum genişlik */
+        margin: 0 auto;        /* tam ortalamak için */
+        display: block;        /* auto margin çalışması için */
     }
 
     .home-content p {
@@ -317,14 +315,8 @@ section {
     }
 }
 
-
 /* 600px altı mini responsive */
 @media(max-width: 600px) {
-
-    .home-img img {
-        width: 80vw;
-    }
-
     .btn {
         padding: 1rem 2rem;
         font-size: 1.4rem;
