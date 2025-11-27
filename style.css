@@ -72,6 +72,79 @@ nav a.active {
     border-bottom: 3px solid #b74b4b;
 }
 
+
+/* Hamburger buton gizli, masaüstü için */
+.menu-btn {
+    display: none;
+    font-size: 3rem;
+    color: #b74b4b;
+    cursor: pointer;
+    z-index: 101;
+    transition: 0.3s ease;
+}
+
+.menu-btn:hover {
+    transform: scale(1.2);
+}
+
+/* Hamburger Menu */
+@media (max-width: 1000px) {
+
+    .menu-btn {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    nav {
+        position: absolute;
+        top: 65px;
+        right: 0;
+        background: #111;
+        width: 200px;             
+        display: none;
+        flex-direction: column;
+        gap: 5px;                 
+        padding: 0.8rem 1rem;     
+        border-radius: 0 0 0 8px;
+        box-sizing: border-box;
+        z-index: 150;
+    }
+
+    nav a {
+        display: block;
+        margin: 0;                
+        padding: 0.5rem 0.4rem;   
+        font-size: 1.9rem;       
+        line-height: 2;           
+        color: white;
+        border-bottom: none;      
+    }
+
+    nav a:hover,
+    nav a.active {
+        color: #b74b4b;
+        background: rgba(183,75,75,0.03); 
+        border-radius: 6px;
+        padding-left: 0.6rem;     
+    }
+
+    nav.active {
+        display: block;
+        border: 2px solid #b74b4b;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    body.nav-open { overflow: hidden; }
+}
+/* Hamburger Menu END*/
+
+
+
+
 /* ----- RESPONSIVE NAV ----- */
 @media(max-width:1000px) {
     nav {
