@@ -472,6 +472,13 @@
             });
         });
 
+        document.addEventListener('click', (e) => {
+            // Eğer tıklama menü veya hamburger dışında ise
+            if (!nav.contains(e.target) && !menuBtn.contains(e.target)) {
+                nav.classList.remove('active');
+                document.body.classList.remove('nav-open');
+            }
+        });
     </script>
 
     <!-- FOOTER -->
