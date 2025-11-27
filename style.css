@@ -97,24 +97,27 @@ nav a.active {
     }
 
     nav {
-        position: absolute;
+        position: fixed;
         top: 65px;
         right: 0;
         background: #111;
-        width: 200px;             
+        width: 70%;
+        max-width: 250px;     
+        max-height: calc(100vh - 65px);
         display: none;
         flex-direction: column;
-        gap: 5px;                 
-        padding: 0.8rem 1rem;     
+        gap: 0.5rem;                 
+        padding: 0.5rem 1rem;     
         border-radius: 0 0 0 8px;
         box-sizing: border-box;
         z-index: 150;
+        overflow-y: auto;
     }
 
     nav a {
         display: block;
         margin: 0;                
-        padding: 0.3rem 0.4rem;
+        padding: 0 0.4rem;
         font-size: 1.4rem;       
         line-height: 1;           
         color: white;
