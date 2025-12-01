@@ -636,7 +636,9 @@ section h2 {
     gap: 2rem;
 }
 
+/* Kartın içinde konumlandırma için referans noktası olacak */
 .education-card {
+    position: relative; /* GPA için referans noktası */
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -668,10 +670,15 @@ section h2 {
     align-items: center;
 }
 
+.edu-content {
+    flex-grow: 1; 
+}
+
 .edu-content h3 {
     font-size: 2rem;
     color: white;
     margin-bottom: 0.4rem;
+    padding-right: 120px; 
 }
 
 .edu-year {
@@ -686,17 +693,49 @@ section h2 {
     font-size: 1.3rem;
     color: #ccc;
     line-height: 1.4;
+    margin-bottom: 8px;
 }
 
-/* Education Responsive */
+.gpa {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    color: #b74b4b;
+    font-weight: 700;
+    white-space: nowrap;
+    padding: 0.5rem 1rem;
+    border: 1px solid #b74b4b;
+    border-radius: 0.5rem;
+    background-color: #1a1a1a;
+    z-index: 10;
+    box-shadow: 0 0 25px #b74b4b;
+}
+
 @media (max-width: 768px) {
     .education-card {
         flex-direction: column;
         text-align: center;
+        padding-bottom: 5rem; 
     }
 
     .edu-logo {
         margin-top: 0.8rem;
+    }
+    
+    .edu-content h3 {
+        padding-right: 0;
+    }
+
+    .gpa {
+        position: absolute;
+        bottom: 15px;
+        right: 50%;
+        top: auto;
+        transform: translateX(50%);
+        box-shadow: 0 0 8px rgba(183, 75, 75, 0.7); 
+        margin-top: 15px;
     }
 }
 
