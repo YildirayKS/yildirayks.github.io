@@ -304,7 +304,10 @@
                 <div class="info-card">
                     <i class="fa-solid fa-envelope"></i>
                     <h3>Email</h3>
-                    <p id="email_text">yildiraykarasubasi13@gmail.com</p>
+                    <div class="email-container">
+                        <p id="email_text">yildiraykarasubasi13@gmail.com</p>
+                        <i class="fa-regular fa-copy copy-icon" onclick="copyEmail()"></i>
+                    </div>
                 </div>
                 <div class="info-card">
                     <i class="fa-solid fa-location-dot"></i>
@@ -461,7 +464,7 @@
             }
         });
 
-        // ----- MOBILE MENU -----
+        // ----- HAMBURGER MENU -----
         const menuBtn = document.querySelector('.menu-btn');
         const nav = document.querySelector('header nav');
 
@@ -476,12 +479,24 @@
         });
 
         document.addEventListener('click', (e) => {
-            // Eğer tıklama menü veya hamburger dışında ise
             if (!nav.contains(e.target) && !menuBtn.contains(e.target)) {
                 nav.classList.remove('active');
                 document.body.classList.remove('nav-open');
             }
         });
+
+        //----- E-MAIL COPY -----
+        function copyEmail() {
+            const emailText = document.getElementById('email_text').textContent;
+
+            navigator.clipboard.writeText(emailText).then(() => {
+                showCustomAlert('Email copied to clipboard!', 'success');
+
+            }).catch(err => {
+                showCustomAlert('Failed to copy email!', 'error');
+                console.error('Copy failed:', err);
+            });
+        }
     </script>
 
     <!-- FOOTER -->
