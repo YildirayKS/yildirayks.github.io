@@ -593,7 +593,6 @@ section h2 {
 
 .info-card h3 {
     font-size: 2rem;
-    margin-bottom: 0.5rem;
 }
 
 .info-card p {
@@ -924,14 +923,12 @@ section h2 {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    padding: 0.5rem 0;
 }
 
 .copy-icon {
     color: #b74b4b;
     cursor: pointer;
     padding: 5px;
-    margin-top: 3px;
     padding-top: 10px;
 }
 
