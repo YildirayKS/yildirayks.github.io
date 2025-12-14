@@ -33,13 +33,26 @@ navLinks.forEach(link => {
 
 window.addEventListener('scroll', () => {
     let current = '';
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop - 140;
-        const sectionHeight = section.offsetHeight;
-        if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
-            current = section.getAttribute('id');
-        }
-    });
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    
+    // Check if we're at the absolute bottom of the page
+    const isAtBottom = Math.ceil(scrollPosition + windowHeight) >= documentHeight;
+    
+    // If at bottom, set contact as active
+    if (isAtBottom) {
+        current = 'contact';
+    } else {
+        // Otherwise, use the normal section detection
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 140;
+            const sectionHeight = section.offsetHeight;
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                current = section.getAttribute('id');
+            }
+        });
+    }
 
     navLinks.forEach(link => {
         link.classList.remove('active');
