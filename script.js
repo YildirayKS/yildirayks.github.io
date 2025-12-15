@@ -240,7 +240,8 @@ let currentLanguage = localStorage.getItem('language') || 'en';
 const languageNames = {
     'en': 'EN',
     'tr': 'TR',
-    'de': 'DE'
+    'de': 'DE',
+    'ru': 'RU'
 };
 
 function toggleLanguageMenu() {
@@ -378,13 +379,13 @@ function applyTranslations(lang) {
     // Update home section and home-content div with language class
     const homeSection = document.querySelector('.home');
     if (homeSection) {
-        homeSection.classList.remove('lang-en', 'lang-tr', 'lang-de');
+        homeSection.classList.remove('lang-en', 'lang-tr', 'lang-de', 'lang-ru');
         homeSection.classList.add('lang-' + lang);
     }
     
     const homeContent = document.querySelector('.home-content');
     if (homeContent) {
-        homeContent.classList.remove('lang-en', 'lang-tr', 'lang-de');
+        homeContent.classList.remove('lang-en', 'lang-tr', 'lang-de', 'lang-ru');
         homeContent.classList.add('lang-' + lang);
     }
 
@@ -402,7 +403,7 @@ function applyTranslations(lang) {
                 // Handle special case for home.greeting with span
                 if (key === 'home.greeting') {
                     // Remove previous language classes
-                    element.classList.remove('lang-en', 'lang-tr', 'lang-de');
+                    element.classList.remove('lang-en', 'lang-tr', 'lang-de', 'lang-ru');
                     // Add current language class
                     element.classList.add('lang-' + lang);
                     
@@ -412,6 +413,8 @@ function applyTranslations(lang) {
                         element.innerHTML = 'Merhaba, Ben <span>Yıldıray</span>';
                     } else if (lang === 'de') {
                         element.innerHTML = 'Hallo, ich bin <span>Yıldıray</span>';
+                    } else if (lang === 'ru') {
+                        element.innerHTML = 'Привет, меня зовут <span>Yıldıray</span>';
                     }
                 } else {
                     element.textContent = value;
@@ -434,7 +437,7 @@ function applyTranslations(lang) {
     const typingTextSpan = document.querySelector('.typing-text span');
     if (typingTextElement && typingTextSpan) {
         // Remove previous language classes
-        typingTextElement.classList.remove('lang-en', 'lang-tr', 'lang-de');
+        typingTextElement.classList.remove('lang-en', 'lang-tr', 'lang-de', 'lang-ru');
         // Add current language class
         typingTextElement.classList.add('lang-' + lang);
         
@@ -445,6 +448,9 @@ function applyTranslations(lang) {
         } else if (lang === 'de') {
             prefix = 'Ich bin';
             typingContent = 'Informatiker';
+        } else if (lang === 'ru') {
+            prefix = 'Я';
+            typingContent = 'Компьютерный инженер';
         } else {
             prefix = 'I\'m a';
             typingContent = 'Computer Engineer';
@@ -506,14 +512,16 @@ function updateDownloadLinks(lang) {
     const langSuffixes = {
         'en': 'english',
         'tr': 'turkce',
-        'de': 'deutsch'
+        'de': 'deutsch',
+        'ru': 'russian'
     };
 
     // Map language codes to portfolio file name (Turkish uses "portfolyo")
     const portfolioNames = {
         'en': 'portfolio',
         'tr': 'portfolyo',
-        'de': 'portfolio'
+        'de': 'portfolio',
+        'ru': 'portfolio'
     };
 
     const suffix = langSuffixes[lang] || 'english';

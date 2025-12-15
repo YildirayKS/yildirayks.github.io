@@ -47,13 +47,13 @@
     },
     "turasas": {
       "title": "Software Developer / Intern",
-      "company": "Türasaş",
+      "company": "TÜRASAŞ",
       "period": "Jul 2024 - Aug 2024",
       "description": "I completed my 30-day mandatory summer internship at TÜRASAŞ. I focused on computer networks and arduino."
     },
     "tubitak": {
-      "title": "Software Developer / Tübitak-1001 Scholar",
-      "company": "Tübitak",
+      "title": "Software Developer / TÜBİTAK-1001 Scholar",
+      "company": "TÜBİTAK",
       "period": "Oct 2024 - Jun 2025",
       "description": "I worked on data collection and web development for an AI-powered project aimed at the early detection of preeclampsia."
     },
@@ -74,8 +74,8 @@
     "tech": "Technologies:",
     "wordslide": {
       "title": "Word Slide",
-      "desc": "An offline, single-player English-Turkish vocabulary game where players learn words in 60 seconds and track their performance based on correct and incorrect answers.",
-      "descLong": "I worked on an offline, single-player word learning game to help users expand their English-Turkish vocabulary in an engaging and effective way. The goal of this project is to have the player learn words displayed on the screen for 60 seconds. If the player knows the word's meaning, the card is moved to the right; if they don't know or are incorrect, it is moved to the left. At the end of the round, the system displays the number of correct and incorrect answers to track performance."
+      "desc": "An offline English-Turkish vocabulary game designed for a single player but also playable together with a friend, where words are learned within 60 seconds and performance is tracked based on correct and incorrect answers.",
+      "descLong": "I worked on an offline word learning game designed for a single player but also playable together with a friend, aimed at helping users expand their English-Turkish vocabulary in an engaging and effective way. The goal of this project is for the player to learn the words displayed on the screen within 60 seconds. If the player knows the meaning of a word, the card is moved to the right; if they do not know it or answer incorrectly, it is moved to the left. At the end of the round, the system displays the number of correct and incorrect answers to track performance."
     },
     "lostrustykey": {
       "title": "Lost Rusty Key",
@@ -93,7 +93,7 @@
       "descLong": "I developed a mobile application that provides first aid recommendations to soldiers injured in combat, functioning offline and directly on the device without an internet connection. With this application, when soldiers upload a photo of the injured area, the AI model I trained identifies the type of wound and provides appropriate first aid suggestions based on the available medical supplies. Through this project, I aimed to help reduce, at least partially, the number of soldier casualties."
     },
     "tubitak": {
-      "title": "Tübitak-1001 Project",
+      "title": "TÜBİTAK-1001 Project",
       "desc": "Handled clinical data collection and developed a user-friendly web platform, gaining experience in data cleaning, AI data preparation, and full-stack web application development.",
       "descLong": "I took on data collection and web platform development duties. Working with real clinical data, I gained experience in data analysis, data cleaning, and data preparation for AI models. By developing a user-friendly website, I learned the structure of a web application and how to integrate front-end and back-end. I also gained hands-on experience with data processing in AI projects and the development of fully functional web applications."
     },
@@ -108,9 +108,9 @@
       "descLong": "In the transportation sector, drivers continuing to drive using tachograph devices belonging to others after their own device's duration had expired caused both legal violations and an increased risk of fatigue-related accidents. To address this issue, I worked on an integrated system that performs face recognition-based tachograph verification and real-time sleep–wakefulness monitoring. When a driver scanned their tachograph device into the system, I planned for the in-vehicle camera to analyze the driver's face and check whether it matched the device's actual owner. After verification, the system was intended to monitor the driver's alertness in real time during driving using AI-supported image processing techniques, and issue an audible warning if drowsiness or inattention was detected. With this project, I aimed both to prevent tachograph misuse and to enhance driver safety."
     },
     "teapp": {
-      "title": "TÜRASAŞ TeaApp",
-      "desc": "Developed a cafeteria ordering app that lets employees place orders directly, displaying them on the cafeteria screen to reduce staff workload and save time.",
-      "descLong": "Previously employees had to call staff at the cafeteria to order food or drinks at the company where I did my internship. To improve this situation, I developed an app that allowed employees to place orders directly without contacting any staff members. The app displayed each employee's order on the cafeteria screen, allowing staff to prepare and deliver orders accordingly. This project both saved time and significantly reduced the cafeteria staff's workload."
+      "title": "TÜRASAŞ Internship Project",
+      "desc": "I developed a canteen ordering application that allows employees to place orders directly, displaying them on the canteen screen to save time and reduce staff workload.",
+      "descLong": "At the company where I previously interned, employees had to call the canteen staff to place drink orders. To streamline this process, I developed an application that allowed employees to order directly without contacting any staff member. The application displayed each employee’s order on the canteen screen, enabling staff to prepare and deliver orders efficiently. This project not only saved time but also significantly reduced the workload of the canteen staff."
     },
     "cerebrum": {
       "title": "Cerebrum Tech Internship Project",
