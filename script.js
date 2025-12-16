@@ -141,8 +141,8 @@ if (projectCards && modal) {
                 desc = card.dataset.desc || '';
             }
             
-            let tech = card.querySelector('.project-tech')?.textContent.replace(/Technologies:|Teknolojiler:|Technologien:/, '').trim() || '';
-            tech = tech.replace(/^(Technologies:|Teknolojiler:|Technologien:)\s*/, '');
+            let tech = card.querySelector('.project-tech')?.textContent.replace(/Technologies:|Teknolojiler:|Technologien:|Технологии:/, '').trim() || '';
+            tech = tech.replace(/^(Technologies:|Teknolojiler:|Technologien:|Технологии:)\s*/, '');
 
             let images = [];
             try {
