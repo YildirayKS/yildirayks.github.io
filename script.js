@@ -414,7 +414,7 @@ function applyTranslations(lang) {
                     } else if (lang === 'de') {
                         element.innerHTML = 'Hallo, ich bin <span>Yıldıray</span>';
                     } else if (lang === 'ru') {
-                        element.innerHTML = 'Привет, меня зовут <span>Yıldıray</span>';
+                        element.innerHTML = 'Привет, меня зовут <span>Йылдырай</span>';
                     }
                 } else {
                     element.textContent = value;
